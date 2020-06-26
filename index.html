@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta
+      name="Description"
+      content="Brandon Lee, Web Developer's Portfolio."
+    />
+    <script src="https://kit.fontawesome.com/7cafbc0180.js"></script>
+
+    <!-- favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="favicons/site.webmanifest" />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/modal.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+    <!--Fullscreen.js-->
+    <link rel="stylesheet" href="css/fullpage.min.css" />
+
+    <title>Brandon Lee</title>
+  </head>
+
+  <body>
+    <nav>
+      <div class="logo"><a href="#home">Brandon Lee</a></div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="menu-toggle">
+        <i class="fas fa-bars fa-lg "></i>
+      </div>
+    </nav>
+
+    <!-- Modals Section -->
+
+    <div id="modal-project1" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close-button button-1">&times;</span>
+          <img src="./img/blee-commerce-modal.jpg" alt="" />
+        </div>
+        <div class="modal-body">
+          <p>
+            In this Project, I created a fully functional eCommerce platform that utilizes the Stripe API to process payments. 
+            Instead of using a traditional backend by using Express.JS, I decided to more fully utilize Google Firebase and 
+            their cloud functions combined with their database  to make my stripe requests. More info can be found in my github
+            Repo's README.me linked below.
+          </p>
+        </div>
+        <div class="modal-footer">
+          <a href="https://blee-commerce.web.app" target="_blank" rel="noopener">
+            <div class="button">
+              <i class="fas fa-laptop-code "></i> View Demo
+            </div></a
+          >
+          <a href="https://github.com/brewswain/blee-commerce" target="_blank" rel="noopener">
+            <div class="button"><i class="fab fa-github"></i> Github</div></a
+          >
+        </div>
+      </div>
+    </div>
+
+    <div id="modal-project2" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close-button button-2">&times;</span>
+          <img src="./img/rss-aggregator-modal.jpg" alt="" />
+        </div>
+        <div class="modal-body">
+          <p>
+            In this Project, I wished to create a dynamic news feed that covered
+            some of my interests, while branching out a bit for me and using my 
+            Python/Django knowledge. Some minimal Vue.JS was also used. Due to 
+            Django being used, I learned how to utilize Heroku to fulfill my
+            hosting requirements.
+          </p>
+        </div>
+        <div class="modal-footer">
+          <a href="http://bleerssaggregator.herokuapp.com/tech/" target="_blank" rel="noopener">
+            <div class="button">
+              <i class="fas fa-laptop-code"></i> View Demo
+            </div></a
+          >
+          <a href="https://github.com/brewswain/django_rss_aggregator" target="_blank" rel="noopener"
+            ><div class="button"><i class="fab fa-github"></i> Github</div></a
+          >
+        </div>
+      </div>
+    </div>
+
+    <div id="modal-project3" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close-button button-3">&times;</span>
+          <img src="./img/fighting-game-wiki-modal.jpg" alt="" />
+        </div>
+        <div class="modal-body">
+          <p>
+            I used Vanilla HTML, CSS, and Javascript for this wiki as I 
+            wanted to highlight to myself the differences in development process
+            with and without front-end Frameworks/UI Libraries being used. This 
+            ended up being a passion project of mine, due to my love of the source 
+            material as well as the challenge of redesigning classic Media Wiki site 
+            layouts to have higher UX priority while being familiar to users.
+          </p>
+        </div>
+        <div class="modal-footer">
+          <a href="https://fighting-game-thingy.web.app/index.html" target="_blank" rel="noopener">
+            <div class="button">
+              <i class="fas fa-laptop-code"></i> View Demo
+            </div></a
+          >
+          <a href="https://github.com/brewswain/fighting_game_wiki" target="_blank" rel="noopener"
+            ><div class="button"><i class="fab fa-github"></i> Github</div></a
+          >
+        </div>
+      </div>
+    </div>
+
+    <div id="modal-project4" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close-button button-4">&times;</span>
+          <img src="./img/Dynamic-landing-page-modal.jpg" alt="" />
+        </div>
+        <div class="modal-body">
+          <p>
+            My first project that I seriously worked on - A minimalist Productivity 
+            Dashboard that would act as your default new Tab page in Google Chrome. 
+            The dashboard would dynamically generate a different wallpaper based on the time of day, 
+            allow you to set your day's focus, show geo-located weather, and have a functioning To-Do 
+            list that stores said information in your localStorage.
+            
+          </p>
+        </div>
+        <div class="modal-footer">
+          <a href="https://chrome.google.com/webstore/detail/ladjgjjhjjeieapfdmcdmgjegngionfb/publish-accepted?authuser=0&hl=en" target="_blank" rel="noopener">
+            <div class="button">
+              <i class="fas fa-laptop-code"></i> View Demo
+            </div></a
+          >
+          <a href="https://github.com/brewswain/Dynamic_Landing_Page" target="_blank" rel="noopener"
+            ><div class="button"><i class="fab fa-github"></i> Github</div></a
+          >
+        </div>
+      </div>
+    </div>
+
+    <div class="contact-modal-success">
+      <div class="contact-modal-container">
+        <div class="contact-modal-body">
+          <p class="contact-modal-message">Message Sent Successfully!</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact-modal-failure">
+      <div class="contact-modal-container">
+      <div class="contact-modal-body">
+        <p class="contact-modal-message">Something went wrong, please click email address to get in contact directly.</p>
+      </div>
+    </div>
+    </div>
+
+
+    <!-- Main Page Section -->
+
+    <section id="fullpage">
+      <div data-anchor="home" class="section section-home">
+        <div class="background-image">
+          <div class="image-caption">
+            <h1>Hey, I'm Brandon.</h1>
+            <h2>I'm a Web Developer.</h2>
+          </div>
+        </div>
+      </div>
+      <section data-anchor="projects" class="section section-projects">
+        <h1 class="section-text project-text">Projects</h1>
+        <div class="container">
+          <div class="card">
+            <div class="img-box">
+              <img src="./img/blee-commerce.jpg" alt="" />
+            </div>
+            <div class="content">
+              <div class="caption">
+                <h2>Blee-Commerce</h2>
+                <p>HTML/CSS, React.JS/Redux, Google Firebase, Stripe API</p>
+              </div>
+              <div class="button-container">
+                <button id="project-1">LEARN MORE</button>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="img-box">
+              <img src="./img/rss-aggregator.jpg" alt="" />
+            </div>
+            <div class="content">
+              <div class="caption">
+                <h2>RSS Aggregator</h2>
+                <p>HTML/CSS, Python, Django</p>
+              </div>
+              <div class="button-container">
+                <button id="project-2">LEARN MORE</button>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="img-box">
+              <img src="./img/fighting-game-wiki.jpg" alt="" />
+            </div>
+            <div class="content">
+              <div class="caption">
+                <h2>FIghting Game Wiki</h2>
+                <p>HTML/CSS, Vanilla Javascript</p>
+              </div>
+              <div class="button-container">
+                <button id="project-3">LEARN MORE</button>
+              </div>
+            </div>
+          </div>
+          <div class="card" id="bottom-project">
+            <div class="img-box">
+              <img src="./img/Dynamic-landing-page.jpg" alt="" />
+            </div>
+            <div class="content">
+              <div class="caption">
+                <h2>Dynamic Landing Page Extension</h2>
+                <p>HTML/CSS, Vanilla Javascript</p>
+              </div>
+              <div class="button-container">
+                <button id="project-4">LEARN MORE</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section data-anchor="about" class="section section-about">
+        <h1 class="section-text about-text">About me</h1>
+        <div class="description">
+          <img src="headshot.png" alt="brandon_lee.png" class="headshot" />
+          <p class="description-text">
+            <br />
+            <br />
+            Curious guy who tries to understand how everything works; I tend to
+            break stuff apart,
+            <br />
+            then rebuild it, to understand the object's logic. Turns out this
+            approach is pretty useful
+            <br />
+            when learning to code, particularly with VCS!
+            <br />
+
+            <br />
+            After exposure to third-party libraries/modules, I quickly gained an
+            appreciation for clean,
+            <br />
+            legible, easily-maintainable code, and seek to constantly refine my
+            approach with every
+            <br />
+            project undertaken. This includes using external solutions for
+            problems instead of trying to
+            <br />
+            handcraft every solution I need.
+          </p>
+        </div>
+        <div class="proficiency">
+          <ul>
+            <h3>Proficient in:</h3>
+            <li>- HTML/CSS</li>
+            <li>- Javascript</li>
+            <li>- Python</li>
+            <li>- Django</li>
+            <li>- React.js</li>
+            <li>- Node.js</li>
+            <li>- Google Firebase</li>
+          </ul>
+
+          <ul>
+            <h3>Currently Learning:</h3>
+            <li>- Golang</li>
+            <li>- TypeScript</li>
+          </ul>
+
+          <ul>
+            <h3>Interested in learning:</h3>
+            <li>- Flutter</li>
+            <li>- Rust</li>
+            <li>- WebAssembly</li>
+            <li>- TensorFlow/Machine Learning libraries</li>
+            <li>- Amazon AWS</li>
+            <li>- Docker</li>
+          </ul>
+
+          <ul>
+            <h3>Community Goals:</h3>
+            <li>- Work on more open source projects.</li>
+            <li>- Create a twitch channel dedicated to coding.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section data-anchor="contact" class="section section-contact">
+        <div class="container">
+          <div class="contact-text">
+            <h1 class="section-text contact-text">CONTACT</h1>
+            <h3 class="contact-text">Wanna get in touch?</h3>
+          </div>
+ 
+            <div class="contact-container">
+              <div class="form-container">
+                <div class="contact-form">
+                  <div class="form-caption">Name</div>
+                  <input
+                    type="text"
+                    name="name"
+                    class="form-data large"
+                    id="user-name"
+                  />
+                  <br />
+                  <div class="form-caption">Email Address</div>
+                  <input
+                    type="text"
+                    name="email"
+                    class="form-data large"
+                    id="user-email"
+                  />
+                  <br />
+                  <div class="form-caption ">Message</div>
+                  <textarea
+                    name="message"
+                    class="form-data form-message"
+                    id="user-message"
+                
+                    rows="4"
+                  ></textarea>
+                  <br />    
+                  <div class="button-container">
+                    <button class="submit-button">Submit</button>
+                  </div>
+               
+              </div>
+          <div class="contact-information">
+            <a href="mailto:blee-code@gmail.com"
+              >blee-code@gmail.com</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <script src="js/nav.js"></script>
+      <script src="js/modal.js"></script>
+
+      <!-- Fullscreen.js -->
+      <script src="js/scrolloverflow.min.js"></script>
+      <script src="js/fullpage.min.js"></script>
+
+      <!-- Firebase integration -->
+      <script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-app.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-firestore.js"></script>
+
+      <script type="module" src="js/firebase.utils.js"></script>
+
+      <!-- Script needed to make Fullpage.js work on container with the id of 'fullpage' -->
+      <script>
+        new fullpage("#fullpage", {
+          //options here
+          autoScrolling: true,
+          scrollOverflow: true,
+        });
+
+        //methods
+        fullpage_api.setAllowScrolling(true);
+      </script>
+    </section>
+  </body>
+</html>
